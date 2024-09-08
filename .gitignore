@@ -1,0 +1,41 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the `go test` command
+*.out
+
+# Go workspace folder (optional, if you're using Go workspace mode)
+go.work
+go.work.sum
+
+# Go build cache
+/tmp/
+
+# Dependency directories (these will be automatically created by `go mod download` or `go get`)
+vendor/
+
+# If you're using an IDE like VSCode or GoLand, you might want to ignore their config files
+# VSCode
+.vscode/
+
+# JetBrains (GoLand, IntelliJ IDEA)
+.idea/
+*.iml
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Go race detector outputs
+*.race
+
+# Build artifacts
+/build/
