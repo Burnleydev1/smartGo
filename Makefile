@@ -6,3 +6,12 @@ test:
 
 run: build
 	@./bin/smartGo
+
+migration:
+	@migrate create -ext mysql -dir ./cmd/migrate/migrations $(filter-out $@,$(MAKECMDGOALS))
+
+migrate-up:
+	@go run cmd/migrate/main.go up
+
+migrate-down:
+	@go run cmd/migrate/main.go down

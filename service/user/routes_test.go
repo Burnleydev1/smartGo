@@ -39,7 +39,6 @@ func TestUserServiceHandlers(t *testing.T) {
 		}
 	})
 
-
 	t.Run("should create new User", func(t *testing.T) {
 		payload := types.RegisterUserPayload{
 			FirstName: "user",
@@ -64,7 +63,6 @@ func TestUserServiceHandlers(t *testing.T) {
 	})
 
 }
-
 
 type mockUserStore struct{}
 
